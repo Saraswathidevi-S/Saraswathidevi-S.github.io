@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saraswathidevi | Portfolio 2025</title>
+
+    <!-- SEO & Metadata -->
+    <meta name="description"
+        content="Saraswathidevi - Junior Software Developer & Cybersecurity Specialist. Expert in MERN Stack and Defensive Security.">
+    <meta property="og:title" content="Saraswathidevi | Portfolio 2025">
+    <meta property="og:description" content="Immersive 3D Portfolio of a Security-Driven Full Stack Developer.">
+    <meta property="og:type" content="website">
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="loading-state">
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+
+    <!-- Background -->
+    <div class="bg-wrapper">
+        <canvas id="liquid-canvas"></canvas>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Dock -->
+    <nav class="dock-nav">
+        <div class="dock-container">
+            <a href="#hero" class="dock-item" data-tooltip="Home"><i data-lucide="home"></i></a>
+            <a href="#experience" class="dock-item" data-tooltip="Experience"><i data-lucide="briefcase"></i></a>
+            <a href="#skills" class="dock-item" data-tooltip="Skills"><i data-lucide="code-2"></i></a>
+            <a href="#projects" class="dock-item" data-tooltip="Projects"><i data-lucide="folder"></i></a>
+            <a href="#contact" class="dock-item" data-tooltip="Contact"><i data-lucide="mail"></i></a>
+        </div>
+    </nav>
+
+    <main id="content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="container hero-inner skeleton-group">
+                <span class="section-tag reveal-text skeleton-item">
+                    <i data-lucide="shield-check"
+                        style="width: 14px; height: 14px; vertical-align: middle; margin-right: 4px;"></i>
+                    Junior Software Developer & Cybersecurity Specialist
+                </span>
+                <h1 class="reveal-text skeleton-item">Hi, I'm <br><span class="gradient-text">Saraswathidevi</span></h1>
+                <p class="subtitle reveal-text skeleton-item">Passionate <span class="gradient-text">Software
+                        Developer</span> and <span class="gradient-text">Cybersecurity</span> enthusiast. Building
+                    secure, scalable solutions with MERN Stack • Specialist in Web Security & API Security.</p>
+
+                <div class="hero-cards-grid reveal-text skeleton-item">
+                    <div class="about-mini-box glass">
+                        <h3 class="mini-title">About Me</h3>
+                        <ul>
+                            <li><i data-lucide="graduation-cap"></i> Cybersecurity Enthusiast</li>
+                            <li><i data-lucide="code-2"></i> MERN Stack Expert</li>
+                            <li><i data-lucide="git-branch"></i> API & Web Security</li>
+                            <li><i data-lucide="target"></i> Software Dev / Security</li>
+                        </ul>
+                    </div>
+
+                    <div class="terminal-mini-box glass">
+                        <div class="terminal-header">
+                            <div class="dots"><span class="dot"></span><span class="dot"></span><span
+                                    class="dot"></span></div>
+                            <span class="terminal-title">bash — developer_logs</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div id="terminal-content"></div>
+                            <span class="cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-group reveal-text skeleton-item">
+                    <a href="https://github.com/Saraswathidevi-S" target="_blank" class="btn btn-primary">
+                        <i data-lucide="github"></i> View GitHub Profile
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i data-lucide="mail"></i> Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+                <p style="color: var(--color-text-dim); margin-bottom: 40px;">My journey in software development and
+                    cybersecurity.</p>
+
+                <div class="experience-card glass stagger-item tilt-card skeleton-group">
+                    <div class="glow-overlay"></div>
+                    <div class="exp-header skeleton-item">
+                        <div class="exp-icon"><i data-lucide="briefcase"></i></div>
+                        <div class="exp-info">
+                            <h2>Junior Developer</h2>
+                            <p class="gradient-text">Twinmo</p>
+                        </div>
+                        <span class="exp-time">Dec 2024 - Dec 2025</span>
+                    </div>
+                    <div class="exp-body skeleton-item">
+                        <p>Developing and maintaining web applications using modern technologies. Focusing on secure
+                            code implementation and MERN stack scalability.</p>
+                    </div>
+                    <div class="exp-tags skeleton-item">
+                        <span class="exp-tag">MERN</span>
+                        <span class="exp-tag">REST APIs</span>
+                        <span class="exp-tag">Docker</span>
+                        <span class="exp-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container text-left">
+                <h2 class="section-title text-center">Technical <span class="gradient-text">Expertise</span></h2>
+                <p class="text-center" style="color: var(--color-text-dim); margin-bottom: 60px;">Combining technical
+                    excellence with a security-first mindset.</p>
+
+                <div class="expertise-grid">
+                    <div class="expertise-col">
+                        <h3 class="stagger-item"><i data-lucide="code" class="accent"></i> Software Development</h3>
+                        <div class="expertise-list skeleton-group">
+                            <div class="expertise-item stagger-item tilt-card skeleton-item">
+                                <div class="glow-overlay"></div>
+                                <div class="icon"><i data-lucide="languages"></i></div>
+                                <div class="text">
+                                    <h4>Languages</h4>
+                                    <p>Python</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item stagger-item tilt-card skeleton-item">
+                                <div class="glow-overlay"></div>
+                                <div class="icon"><i data-lucide="layout"></i></div>
+                                <div class="text">
+                                    <h4>Frontend</h4>
+                                    <p>React, HTML5, CSS3</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item stagger-item tilt-card skeleton-item">
+                                <div class="glow-overlay"></div>
+                                <div class="icon"><i data-lucide="server"></i></div>
+                                <div class="text">
+                                    <h4>Backend</h4>
+                                    <p>Node.js, Express.js</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item stagger-item tilt-card skeleton-item">
+                                <div class="glow-overlay"></div>
+                                <div class="icon"><i data-lucide="database"></i></div>
+                                <div class="text">
+                                    <h4>Database</h4>
+                                    <p>MongoDB (NoSQL), SQL</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item stagger-item tilt-card skeleton-item">
+                                <div class="glow-overlay"></div>
+                                <div class="icon"><i data-lucide="wrench"></i></div>
+                                <div class="text">
+                                    <h4>Tools & DevOps</h4>
+                                    <p>Git, Docker, n8n Automation, Linux</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expertise-col">
+                        <h3 class="stagger-item"><i data-lucide="shield" class="accent"></i> Cybersecurity</h3>
+                        <div class="expertise-list">
+                            <div class="expertise-item stagger-item tilt-card">
+                                <div class="glow-overlay"></div>
+                                <div class="icon"><i data-lucide="lock"></i></div>
+                                <div class="text">
+                                    <h4>Security Fundamentals</h4>
+                                    <p>OWASP Top 10, CWE Standards</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item stagger-item tilt-card">
+                                <div class="glow-overlay"></div>
+                                <div class="icon"><i data-lucide="fingerprint"></i></div>
+                                <div class="text">
+                                    <h4>Security Labs</h4>
+                                    <p>API Security, Pentesting Practice</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item stagger-item tilt-card">
+                                <div class="glow-overlay"></div>
+                                <div class="icon"><i data-lucide="flag"></i></div>
+                                <div class="text">
+                                    <h4>Capture The Flag</h4>
+                                    <p>Active CTF Participant on HTB/THM</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item stagger-item tilt-card">
+                                <div class="glow-overlay"></div>
+                                <div class="icon"><i data-lucide="binary"></i></div>
+                                <div class="text">
+                                    <h4>Web Security</h4>
+                                    <p>Proactive Defensive Strategies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p style="color: var(--color-text-dim); margin-bottom: 60px;">Key projects showcasing expertise in
+                    software development and cybersecurity.</p>
+
+                <div class="projects-grid skeleton-group">
+                    <div class="project-card glass stagger-item tilt-card skeleton-item" data-title="CMMS"
+                        data-description="Enterprise Computerized Maintenance Management System built with MERN. Optimized for asset tracking, preventive maintenance scheduling, and real-time inventory management. Features include role-based access control and automated email notifications."
+                        data-tags="MERN Stack, Docker, MongoDB, REST API" data-link="https://cmms-zeta.vercel.app/">
+                        <div class="glow-overlay"></div>
+                        <div class="icon"><i data-lucide="package"></i></div>
+                        <h3>CMMS <i data-lucide="external-link" class="small-icon"></i></h3>
+                        <p>Enterprise Computerized Maintenance Management System built with MERN. Optimized for asset
+                            tracking.</p>
+                        <span class="p-link">View Details</span>
+                    </div>
+                    <div class="project-card glass stagger-item tilt-card skeleton-item" data-title="API Security Labs"
+                        data-description="Advanced security testing environment for API vulnerabilities. Focuses on OWASP API Top 10, including Broken Object Level Authorization (BOLA), Mass Assignment, and Improper Assets Management. Includes automated scanning scripts."
+                        data-tags="Security, Python, OWASP, Pentesting" data-link="https://github.com/Saraswathidevi-S">
+                        <div class="glow-overlay"></div>
+                        <div class="icon"><i data-lucide="shield-check"></i></div>
+                        <h3>API Security Labs <i data-lucide="external-link" class="small-icon"></i></h3>
+                        <p>Advanced security testing environment for API vulnerabilities and OWASP compliance testing.
+                        </p>
+                        <span class="p-link">View Details</span>
+                    </div>
+                    <div class="project-card glass stagger-item tilt-card skeleton-item" data-title="n8n Orchestration"
+                        data-description="Automated DevOps pipelines and security alert orchestration. Uses n8n to connect internal security tools with Dockerized environments for automated response and logging."
+                        data-tags="n8n, Docker, Automation, DevOps" data-link="https://github.com/Saraswathidevi-S">
+                        <div class="glow-overlay"></div>
+                        <div class="icon"><i data-lucide="bot"></i></div>
+                        <h3>n8n Orchestration <i data-lucide="external-link" class="small-icon"></i></h3>
+                        <p>Automated DevOps pipelines and security alert orchestration using n8n and Docker.</p>
+                        <span class="p-link">View Details</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p style="color: var(--color-text-dim); margin-bottom: 60px;">Interested in collaboration or
+                    professional opportunities? I'd love to hear from you.</p>
+
+                <div class="connect-grid">
+                    <div class="connect-card glass stagger-item click-to-copy tilt-card"
+                        data-email="saraswathidevi1410@gmail.com">
+                        <div class="glow-overlay"></div>
+                        <div class="icon"><i data-lucide="mail"></i></div>
+                        <h4>Email</h4>
+                        <p>saraswathidevi1410@gmail.com</p>
+                        <span class="copy-success">Copied!</span>
+                    </div>
+                    <a href="https://github.com/Saraswathidevi-S" target="_blank"
+                        class="connect-card glass stagger-item tilt-card">
+                        <div class="glow-overlay"></div>
+                        <div class="icon"><i data-lucide="github"></i></div>
+                        <h4>GitHub</h4>
+                        <p>@Saraswathidevi-S</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saraswathidevi14/" target="_blank"
+                        class="connect-card glass stagger-item tilt-card">
+                        <div class="glow-overlay"></div>
+                        <div class="icon"><i data-lucide="linkedin"></i></div>
+                        <h4>LinkedIn</h4>
+                        <p>Professional Profile</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content glass">
+            <button class="modal-close"><i data-lucide="x"></i></button>
+            <div class="modal-inner">
+                <div class="modal-header">
+                    <div class="modal-icon"><i data-lucide="package"></i></div>
+                    <h2 id="modal-title">Project Title</h2>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-description">Project description goes here...</p>
+                    <div class="modal-tags" id="modal-tags"></div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="modal-link" target="_blank" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
