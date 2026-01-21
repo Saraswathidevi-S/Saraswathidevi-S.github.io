@@ -288,6 +288,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     modalTags.appendChild(span);
                 });
             }
+            
+            // Handle Certificate
+            const certificate = card.getAttribute("data-certificate");
+            const certContainer = document.getElementById("modal-certificate-container");
+            const certImage = document.getElementById("modal-certificate");
+            const modalFooter = document.querySelector(".modal-footer");
+
+            if (certificate && certContainer && certImage) {
+                // Show Certificate ONLY (Hide description, tags, footer)
+                certImage.src = certificate;
+                certImage.style.width = "100%";
+                certImage.style.height = "auto";
+                certContainer.style.display = "block";
+
+                if (modalDesc) modalDesc.style.display = "none";
+                if (modalTags) modalTags.style.display = "none";
+                if (modalFooter) modalFooter.style.display = "none";
+            } else {
+                // Show Project Details (Hide certificate, show description, tags, footer)
+                if (certContainer) certContainer.style.display = "none";
+                if (certImage) certImage.src = "";
+
+                if (modalDesc) modalDesc.style.display = "block";
+                if (modalTags) modalTags.style.display = "flex"; // Tags usually flex
+                if (modalFooter) modalFooter.style.display = "flex"; // Footer usually block or flex
+            }
 
             if (modal) modal.classList.add("active");
             if (typeof lenis !== 'undefined') lenis.stop();
