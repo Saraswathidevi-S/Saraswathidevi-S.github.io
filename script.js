@@ -1,5 +1,3 @@
-// script.js - Final Polish & 3D Effects
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Initialize Lucide Icons
